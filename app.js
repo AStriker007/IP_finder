@@ -5,6 +5,6 @@ const app=express()
 app.get('/x',(req,res,next)=>{
 res.json({msg:req.socket.remoteAddress})
 })
-app.listen(process.env.PORT,()=>{
+app.listen(8080,()=>{
     console.log('Listening')
 })
